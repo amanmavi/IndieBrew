@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page1">
+      <nav class="navbar">
+        <div class="logo-wrapper">
+          <img class="logo-img" src="Assets/Logo.svg" alt="logo" />
+        </div>
+        <div class="nav-text">
+          <p>Pricing</p>
+          <p>Support</p>
+          <a href="sign-up.html" target="_blank"> 
+          <button class="get-started-btn">
+            <b>Get Started</b> - it's free
+          </button></a>
+        </div>
+        <div>
+          <img id="hamburger-img" src="Assets/Hamburger Menu.svg" />
+        </div>
+      </nav>
+      <div class="page1-content">
+      <div class="laptop-img-wrapper">
+        <img class="laptop-img" src="Assets/Feed Mockup.png" alt="laptop" />
+      </div>
+      <div class="page1-text-wrapper">
+      <h1>Your weekly <br>personal feed digest.<br> </h1>
+      <p>
+        With IndieBrew, get personal feeds from resources all around the web,
+        including Reddit, HackerNews, IndieHackers, and much more.
+      </p>
+      <a href="sign-up.html" target="_blank">
+      <button class="get-started-btn"><b>Get Started</b>-it's free</button></a>
+      <div class="user-img-wrapper">
+        <img src="Assets/User Avatars.svg" alt="user-avatars" />
+      </div>
+      <p>Join 32,642 IndieBrewers in curating their personal digest.</p>
+    </div>
+  </div>
+    </div>
+    <div class="page2">
+      <div class="media-icons-wrapper">
+        <img
+          class="sm-icon-img"
+          src="Assets/Social Media Icons.png"
+          alt="icons"
+        />
+      </div>
+      <div class="page2-text-wrapper">
+      <h1>Curate your feed from dozens of resources.</h1>
+      <p>
+        We cover all major platforms where one could want to curate their feed
+        from. Reddit, ProductHunt, IndieHackers, and so much more.
+      </p>
+      <a class="arrow-text" href="#"
+        ><b>See full list of resources</b> &rarr;</a
+      >
+    </div>
+    </div>
+    <div class="page3">
+      <div class="phone-img-wrapper">
+        <img class="phone-img" src="Assets/Phone Mockup.png" alt="phone" />
+      </div>
+      <div class="page3-text-wrapper">
+      <h1>Access your feed from the comfort of your phone.</h1>
+      <p>
+        With native apps for both iOS and Android, accessing your curated
+        content has never been easier.
+      </p>
+      <a class="arrow-text" href="#"><b>Sign up for the waitlist &rarr;</b> </a>
+    </div>
+    </div>
+
+    <footer>
+      <div class="f1-content">
+        <h4>IndieBrew</h4>
+        <p>
+          With IndieBrew, get personal feeds from resources all around the
+          web,including Reddit, HackerNews and much more.
+        </p>
+        <p>Made with 	&#10084 in the UK.</p>
+      </div>
+      <div class="footer-right">
+      <div class="f2-content">
+        <div>
+         <h4>Sitemap</h4>
+         <p>Homepage</p>
+         <p>Pricing</p>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <p>Support</p>
+          <p>Contact</p>
+          <p>FAQ</p>
+        </div>
+      </div>
+      <div class="f3-content">
+    <div>
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Customers</p>
+      <p>Blog</p>
+    </div>
+    <div>
+      <h4>Portfolios</h4>
+      <p>HackerNews</p>
+      <p>Reddit</p>
+      <p>Twitter</p>
+    </div>
+  </div>
+</div>
+    </footer>
+  </body>
+
+
+  <script>
+    function functionName() {
+      const targets = document.querySelectorAll(".nav-text");
+
+      targets.forEach((target) => {
+        if (target.style.display === "none") {
+          target.style.display = "block";
+        } else {
+          target.style.display = "none";
+        }
+      });
+    }
+    document
+      .getElementById("hamburger-img")
+      .addEventListener("click", functionName);
+  </script>
+</html>
