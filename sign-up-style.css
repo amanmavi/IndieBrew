@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+body {
+  background-image: linear-gradient(to bottom right, rgb(238, 197, 245), white);
+  font-family: "DM", sans-serif;
+  padding: 40px 10px;
+}
+.page1 {
+  padding-bottom: 20px;
+}
+.arrow-img {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav-text {
+  display: none;
+}
+.paragraph {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: 500;
+}
+.paragraph p {
+  margin-left: 10px;
+}
+.icon-wrapper {
+  width: 20%;
+  height: 20%;
+}
+.icon {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.page2 {
+  background: white;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.input-box {
+  width: 90%;
+  padding: 15px 0px 15px 10px;
+  border: solid grey 0.5px;
+  border-radius: 5px;
+}
+h4 {
+  margin-bottom: 5px;
+}
+.checkbox-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 0px;
+}
+.checkbox-text {
+  padding-left: 10px;
+  width: 80%;
+}
+.link {
+  color: rgb(151, 70, 218);
+}
+.acc-btn {
+  background: rgb(151, 70, 218);
+  color: white;
+  width: 90%;
+  margin-left: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  body {
+    padding: 30px 30px;
+  }
+  .page1 {
+    padding: 20px 20px;
+  }
+  .nav-text {
+    display: block;
+  }
+  .nav-text h4 {
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .icon-wrapper {
+    width: 5%;
+    height: 5%;
+  }
+  .page2 {
+    padding: 20px 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    padding: 20px 80px;
+  }
+  .all-content {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0px;
+  }
+  .logo-wrapper {
+    width: 50%;
+  }
+
+  .arrow-img {
+    width: 25%;
+  }
+  .nav-text {
+    width: auto;
+  }
+  .page1 {
+    width: 50%;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 80px;
+  }
+  .page2 {
+    width: 50%;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .page1 h1 {
+    margin-bottom: 10px;
+  }
+  .icon-wrapper {
+    width: 20%;
+    height: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .page1 {
+    width: 60%;
+  }
+  .page2 {
+    width: 40%;
+  }
+}
