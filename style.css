@@ -4,8 +4,24 @@ body {
   margin: 0;
   font-family: "DM", sans-serif;
 }
+
+p {
+  color: grey;
+}
 .nav-text {
-  display: none;
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: calc(100% - 40px);
+  text-align: center;
+  border-radius: 10px;
+  top: 50px;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.nav-text p {
+  color: white;
 }
 .page1,
 .page2,
@@ -38,9 +54,7 @@ footer {
   height: auto;
   object-fit: cover;
 }
-p {
-  color: grey;
-}
+
 .arrow-text {
   text-decoration: none;
   color: rgb(88, 19, 218);
@@ -59,13 +73,20 @@ footer {
 
 @media (min-width: 576px) {
   .nav-text {
-    display: flex;
+    background: none;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
     margin-left: 10%;
+    visibility: visible;
+    height: auto;
+    position: static;
+    overflow: visible;
   }
-  .hamburger-img {
+  .nav-text p {
+    color: gray;
+  }
+  #hamburger-img {
     display: none;
   }
   .laptop-img {

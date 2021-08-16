@@ -21,9 +21,8 @@
             <b>Get Started</b> - it's free
           </button></a>
         </div>
-        <div>
           <img id="hamburger-img" src="Assets/Hamburger Menu.svg" />
-        </div>
+        
       </nav>
       <div class="page1-content">
       <div class="laptop-img-wrapper">
@@ -122,12 +121,11 @@
   <script>
     function functionName() {
       const targets = document.querySelectorAll(".nav-text");
-
       targets.forEach((target) => {
-        if (target.style.display === "none") {
-          target.style.display = "block";
-        } else {
-          target.style.display = "none";
+        if (target.style.opacity === "0" || target.style.opacity === "") {
+          target.style.cssText = "height: 150px; overflow: visible; opacity: 1;";
+        } else {    
+          target.style.cssText = "height: 0px; overflow: hidden; opacity: 0;";
         }
       });
     }
