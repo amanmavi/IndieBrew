@@ -74,6 +74,7 @@ footer {
 @media (min-width: 576px) {
   .nav-text {
     background: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
@@ -82,6 +83,7 @@ footer {
     height: auto;
     position: static;
     overflow: visible;
+    opacity: 1;
   }
   .nav-text p {
     color: gray;
